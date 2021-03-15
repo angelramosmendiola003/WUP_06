@@ -48,6 +48,8 @@ basicC + geom_bar(stat="identity",position="dodge")
 basicCC <- ggplot(dd2,aes(x=RACE,y=prcnt*100,fill=BIGBANG)) 
 basicCC + geom_bar(stat="identity", position = "dodge")
 ```
+
+What I see in this plot is that the majority of Black people do not believe in the BIGBANG theory. While in the RACE "Other" the majority does believe in the BIGBANG theory. White people have a 50/50 belief on the theory. Each RACE has a different attitude when it comes to the theory.   
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question. Bottom line is to explain the features of the graph that are relevant to conforming or departing to what is expected by your null hypothesis !-->
 
 ### Numerical Descriptive Results
@@ -56,6 +58,7 @@ table2 <- xtabs(~RACE + BIGBANG, data=GSS)
 rowPerc(table2)
 colPerc(table2)
 ```
+
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
